@@ -74,8 +74,22 @@ document.addEventListener("DOMContentLoaded", () => {
           <nav class="navbar">
             <div class="navbar__logo"><span class="navbar__logo-p1">P</span><span class="navbar__logo-p2">P</span>PayPal</div>
             <ul class="navbar__list">
-              <li class="navbar__list-item"><a class="navbar__list-link" href="#personal">Personal</a><i class="fas fa-chevron-down"></i></li>
-              <li class="navbar__list-item"><a class="navbar__list-link" href="#business">Business</a><i class="fas fa-chevron-down"></i></li>
+              <li class="navbar__list-item navbar__list-item--hover"><a class="navbar__list-link" href="#personal">Personal<i class="fas fa-chevron-down"></i></a>
+                <ul class="navbar__dropdown">
+                  <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">How PayPal works</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">What can you do with a personal account</a></li>
+                  <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Pay online</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Online payment without borders</a></li>
+                  <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Send payments</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Send payments abroad</a></li>
+                  <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Search for deals</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Pay with PayPal and send money</a></li>
+                </ul>
+              </li>
+              <li class="navbar__list-item navbar__list-item--hover"><a class="navbar__list-link" href="#business">Business<i class="fas fa-chevron-down"></i></a>
+                <ul class="navbar__dropdown">
+                  <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">All business solutions</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">See our range of products</a></li>
+                  <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Accept online payments</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Get paid on your website</a></li>
+                  <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Send invoices</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Create and email online invoices</a></li>
+                  <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Sell internationally</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">PayPal supports your global growth</a></li>
+                </ul>
+              </li>
               <li class="navbar__list-item"><a class="navbar__list-link" href="#personal">Partners and Developers</a></li>
             </ul>
             <!--/.navbar__list-->
