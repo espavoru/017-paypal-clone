@@ -2,18 +2,39 @@ extends ../pug/layout.pug
 
 append config
   -
-    currentTitle = 'Home'
+    currentTitle = 'Send Money, Pay Online, or Set Up a Merchant Account.'
     currentDescription = 'New website'
     currentUrl = 'index.html'
 
 block content
 
-  h1 Top news
+  section.top-content#top-content
+    .navbar__wrapper
+      nav.navbar
+        .navbar__logo
+          span.navbar__logo-p1 P
+          span.navbar__logo-p2 P
+          | PayPal
 
-  ol
-    li Man Found Having Tea Party With Donkey Again
-    li Woman With Epic Tattoo Arrested for 37th Time
-    li Viral Photo of Donkey Had Been Photoshopped
-    li Man Buys Hats For Low Income Local Family
-    li Man Jailed For Threatening Wife With Crumpled Hawk
-    li Small Tornado Forcast in Northern Regions
+        ul.navbar__list
+          li.navbar__list-item
+            a.navbar__list-link(href='#personal') Personal
+              i.fas.fa-chevron-down
+          li.navbar__list-item
+            a.navbar__list-link(href='#business') Business
+              i.fas.fa-chevron-down
+          li.navbar__list-item
+            a.navbar__list-link(href='#personal') Partners and Developers
+        ///.navbar__list
+
+        .navbar__buttons
+          button.navbar__btn.navbar__btn--login Login
+          button.navbar__btn.navbar__btn--signup Signup
+      ///.navbar
+
+    .top-content__banner
+      h1.top-content__heading We've Got You Covered
+      p.top-content__paragraph Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum optio fugit rerum repellendus pariatur rem ratione corrupti atque adipisci aliquid possimus et facilis provident ullam.
+      a.top-content__banner-btn.btn--blue(href='#') Learn More
+    ///.top-content__banner
+  ///.top-content
