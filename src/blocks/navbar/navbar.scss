@@ -18,6 +18,7 @@
     width: 100%;
     height: 8rem;
     border-bottom: 0.1rem solid #aaa;
+    transition: all 0.3s;
   }
 
   &__logo {
@@ -111,6 +112,52 @@
     &--signup {
       color: #262626;
       background-color: #fff;
+    }
+  }
+
+  &__dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    top: 8rem;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    margin: 0;
+    padding: 0 30rem;
+
+    visibility: hidden;
+    opacity: 0;
+    list-style: none;
+    transition: all 0.3s;
+
+    background: linear-gradient(to right, #066399, #2f8fdf, #066399);
+  }
+
+  &__dropdown-item {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    margin: 2rem 10rem;
+
+    &:hover #{$block-name}__dropdown-link {
+      color: #ddd;
+    }
+  }
+
+  &__dropdown-link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+
+    &--2 {
+      font-size: 1.3rem;
     }
   }
 }
