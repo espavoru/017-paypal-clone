@@ -4,7 +4,7 @@ var smartgrid = require('smart-grid');
 var settings = {
     outputStyle: 'scss', /* less || scss || sass || styl */
     columns: 12, /* number of grid columns */
-    offset: '0', /* gutter width px || % || rem */
+    offset: '2rem', /* gutter width px || % || rem */
     mobileFirst: true, /* mobileFirst ? 'min-width' : 'max-width' */
     container: {
         maxWidth: '1200px', /* max-width оn very large screen */
