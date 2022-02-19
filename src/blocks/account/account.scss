@@ -1,0 +1,77 @@
+// В этом файле должны быть стили для БЭМ-блока account, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.account {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @include wrapper-full;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 5rem;
+
+    font-size: 5rem;
+    font-weight: 400;
+    color: #444;
+  }
+
+  &__grid {
+    @include row-flex;
+    justify-content: center;
+  }
+
+  &__img-wrapper {
+    @include col;
+    @include size-lg(5);
+  }
+
+  &__img {
+    width: 100%;
+    opacity: 0.8;
+  }
+
+  &__list {
+    @include col;
+    @include size-lg(5);
+
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  &__number {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 1.5rem;
+    border: 0.1rem solid #555;
+    border-radius: 50%;
+  }
+
+  &__link {
+    font-weight: 700;
+    text-decoration: none;
+    color: $accent-color;
+  }
+}

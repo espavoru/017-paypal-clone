@@ -118,3 +118,30 @@ block content
         h3.features__heading 24/7 Service
         p.features__paragraph Whatever aesthetic pinterest snackwave mlkshk 8-bit. You probably haven't heard of them four loko humblebrag, green juice pok pok taxidermy locavore tilde raw denim tote bag truffaut fingerstache celiac franzen. Shoreditch ramps drinking vinegar trust fund.
   ///.features
+
+  section.account#account
+    h2.account__title Get started with PayPal.
+
+    .account__grid
+      +picture({
+        'img': 'account-01',
+        'alt': 'Mackbook',
+        'lg': false,
+        'ext': 'png'
+      }, 'account__img').account__img-wrapper
+
+      ul.account__list
+        li.account__list-item
+          span.account__number 1
+          span
+            | Set up
+            a.account__link(href='#')  a business account
+
+        li.account__list-item
+          span.account__number 2
+          span.account__text Selvage affogato ramps leggings small batch.
+
+        li.account__list-item
+          span.account__number 3
+          span.account__text Kombucha kale chips tilde, gluten-free disrupt crucifix ramps poke forage sartorial edison bulb vaporware.
+  ///.account
