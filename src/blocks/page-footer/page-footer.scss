@@ -5,4 +5,50 @@
 .page-footer {
 
   $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // height: 15rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    border-bottom: 0.1rem dotted #262626;
+    padding-bottom: 1rem;
+  }
+
+  &__img {
+    width: 3.8rem;
+    opacity: 0.6;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__list-item {
+    margin-right: 2.5rem;
+  }
+
+  &__list-link {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #262626;
+  }
+
+  &__copyright {
+    margin-top: 2rem;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+  }
 }
