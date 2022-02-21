@@ -30,7 +30,7 @@
 
   &__img-wrapper {
     @include col;
-    @include size-lg(5);
+    @include size-xl(5);
   }
 
   &__img {
@@ -40,7 +40,7 @@
 
   &__list {
     @include col;
-    @include size-lg(5);
+    @include size-xl(5);
 
     margin-top: 2rem;
     margin-bottom: 0;

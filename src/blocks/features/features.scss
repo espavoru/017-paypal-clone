@@ -27,8 +27,13 @@
 
   &__grid {
     @include row-flex;
+    width: 90%;
 
-    @media (min-width: $screen-lg) {
+    @media (min-width: 1400px) {
+      width: 80%;
+    }
+
+    @media (min-width: 1500px) {
       width: 70%;
     }
   }
