@@ -66,133 +66,170 @@ document.addEventListener("DOMContentLoaded", () => {
 <body><noscript>Enable JavaScript please.</noscript>
   <div class="page__inner">
     <div class="page__content">
-      <header class="page-header" role="banner">
-        <div class="page-header__inner"></div>
-      </header>
-      <section class="top-content" id="top-content">
-        <div class="navbar__wrapper">
-          <nav class="navbar">
-            <div class="navbar__logo"><span class="navbar__logo-p1">P</span><span class="navbar__logo-p2">P</span>PayPal</div>
-            <ul class="navbar__list">
-              <li class="navbar__list-item navbar__list-item--hover"><a class="navbar__list-link" href="#personal">Personal<i class="fas fa-chevron-down"></i></a>
-                <ul class="navbar__dropdown">
-                  <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">How PayPal works</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">What can you do with a personal account</a></li>
-                  <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Pay online</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Online payment without borders</a></li>
-                  <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Send payments</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Send payments abroad</a></li>
-                  <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Search for deals</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Pay with PayPal and send money</a></li>
-                </ul>
-              </li>
-              <li class="navbar__list-item navbar__list-item--hover"><a class="navbar__list-link" href="#business">Business<i class="fas fa-chevron-down"></i></a>
-                <ul class="navbar__dropdown">
-                  <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">All business solutions</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">See our range of products</a></li>
-                  <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Accept online payments</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Get paid on your website</a></li>
-                  <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Send invoices</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Create and email online invoices</a></li>
-                  <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Sell internationally</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">PayPal supports your global growth</a></li>
-                </ul>
-              </li>
-              <li class="navbar__list-item"><a class="navbar__list-link" href="#personal">Partners and Developers</a></li>
+      <div class="page__front-page">
+        <section class="top-content" id="top-content">
+          <div class="navbar__wrapper">
+            <nav class="navbar">
+              <div class="logo"><span class="navbar__logo-p1">P</span><span class="navbar__logo-p2">P</span>PayPal</div>
+              <ul class="navbar__list">
+                <li class="navbar__list-item navbar__list-item--hover"><a class="navbar__list-link" href="#personal">Personal<i class="fas fa-chevron-down"></i></a>
+                  <ul class="navbar__dropdown">
+                    <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">How PayPal works</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">What can you do with a personal account</a></li>
+                    <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Pay online</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Online payment without borders</a></li>
+                    <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Send payments</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Send payments abroad</a></li>
+                    <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Search for deals</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Pay with PayPal and send money</a></li>
+                  </ul>
+                </li>
+                <li class="navbar__list-item navbar__list-item--hover"><a class="navbar__list-link" href="#business">Business<i class="fas fa-chevron-down"></i></a>
+                  <ul class="navbar__dropdown">
+                    <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">All business solutions</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">See our range of products</a></li>
+                    <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Accept online payments</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Get paid on your website</a></li>
+                    <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Send invoices</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Create and email online invoices</a></li>
+                    <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Sell internationally</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">PayPal supports your global growth</a></li>
+                  </ul>
+                </li>
+                <li class="navbar__list-item"><a class="navbar__list-link" href="#personal">Partners and Developers</a></li>
+              </ul>
+              <!--/.navbar__list-->
+              <div class="navbar__buttons"><button class="navbar__btn navbar__btn--login btn--login">Login</button><button class="navbar__btn navbar__btn--signup btn--signup">Signup</button></div>
+            </nav>
+            <!--/.navbar-->
+          </div>
+          <div class="top-content__banner">
+            <h1 class="top-content__heading">We've Got You Covered</h1>
+            <p class="top-content__paragraph">Cliche health goth cardigan, kitsch venmo ramps hell of church-key deep v kickstarter dreamcatcher. DIY asymmetrical seitan synth pug polaroid man braid stumptown flannel four dollar toast +1 subway tile tote bag. Microdosing helvetica taiyaki hoodie.</p><a class="top-content__banner-btn btn--blue btn--login" href="#">Learn More</a>
+          </div>
+          <!--/.top-content__banner-->
+        </section>
+        <!--/.top-content-->
+        <section class="services" id="services">
+          <h2 class="services__heading">PayPal is for everyone who pays or gets paid</h2>
+          <div class="services__grid">
+            <div class="services__col"><i class="fas fa-user-tie"></i>
+              <h3 class="services__name">Individuals</h3>
+              <p class="services__paragraph">I'm baby irony pok pitchfork four dollar toast butcher la croix synth hella artisan gluten-free tbh.</p><a class="services__btn" href="#">Learn More</a>
+            </div>
+            <div class="services__col"><i class="fas fa-briefcase"></i>
+              <h3 class="services__name">Businesses</h3>
+              <p class="services__paragraph">I'm baby pok pok +1 hoodie man bun skateboard pug raclette lumbersexual cold-pressed tofu aesthetic.</p><a class="services__btn" href="#">Learn More</a>
+            </div>
+            <div class="services__col"><i class="fas fa-handshake"></i>
+              <h3 class="services__name">Partners</h3>
+              <p class="services__paragraph">I'm baby vegan cardigan pork belly, irony church-key readymade vexillologist retro gastropub wolf.</p><a class="services__btn" href="#">Learn More</a>
+            </div>
+          </div>
+        </section>
+        <!--/.services-->
+        <section class="features" id="features">
+          <h2 class="features__title">The world prefers PayPal</h2>
+          <div class="features__grid">
+            <div class="features__col">
+              <h3 class="features__heading">Advanced Protection</h3>
+              <p class="features__paragraph">Iceland semiotics pinterest direct trade, plaid next level waistcoat dreamcatcher small batch taxidermy keytar church-key. Aesthetic 90's cronut woke heirloom, artisan organic vinyl umami flannel. Godard celiac PBR&B, taxidermy fashion axe hexagon hot chicken enamel pin.</p>
+            </div>
+            <div class="features__col">
+              <h3 class="features__heading">Fast Payments</h3>
+              <p class="features__paragraph">Chambray roof party chillwave four loko franzen distillery. Cred direct trade cray, gastropub coloring book 3 wolf moon messenger bag cold-pressed lumbersexual hashtag. Meditation gluten-free VHS, affogato etsy knausgaard 3 wolf moon fam tote bag thundercats meh leggings.</p>
+            </div>
+            <div class="features__col">
+              <h3 class="features__heading">Global Reach</h3>
+              <p class="features__paragraph">Cornhole kinfolk af live-edge twee, messenger bag adaptogen. Quinoa twee four dollar toast, live-edge adaptogen snackwave kickstarter letterpress taxidermy ramps cold-pressed raw denim trust fund kale chips. Literally butcher single-origin coffee forage fam.</p>
+            </div>
+            <div class="features__col">
+              <h3 class="features__heading">Easy Integration</h3>
+              <p class="features__paragraph">Chicharrones brunch enamel pin, mixtape vexillologist waistcoat aesthetic crucifix kombucha twee cold-pressed cronut mumblecore iPhone cred. Gastropub 8-bit microdosing four dollar toast keffiyeh, stumptown shabby chic umami drinking vinegar activated charcoal hell of</p>
+            </div>
+            <div class="features__col">
+              <h3 class="features__heading">Simple and Convenient</h3>
+              <p class="features__paragraph">Venmo fam tacos irony. Gluten-free intelligentsia authentic, VHS normcore taxidermy squid wayfarers direct trade gastropub bushwick. Subway tile austin truffaut, glossier normcore forage freegan four loko neutra affogato prism small batch vegan.</p>
+            </div>
+            <div class="features__col">
+              <h3 class="features__heading">24/7 Service</h3>
+              <p class="features__paragraph">Whatever aesthetic pinterest snackwave mlkshk 8-bit. You probably haven't heard of them four loko humblebrag, green juice pok pok taxidermy locavore tilde raw denim tote bag truffaut fingerstache celiac franzen. Shoreditch ramps drinking vinegar trust fund.</p>
+            </div>
+          </div>
+        </section>
+        <!--/.features-->
+        <section class="account" id="account">
+          <h2 class="account__title">Get started with PayPal.</h2>
+          <div class="account__grid">
+            <picture class="picture account__img-wrapper">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/account-01-640p.webp, img/account-01-1280p.webp 2x" /><img class="account__img" alt="Mackbook" width="640" src="img/account-01-640p.png" srcset="img/account-01-1280p.png 2x" />
+            </picture>
+            <ul class="account__list">
+              <li class="account__list-item"><span class="account__number">1</span><span>Set up<a class="account__link" href="#"> a business account</a></span></li>
+              <li class="account__list-item"><span class="account__number">2</span><span class="account__text">Selvage affogato ramps leggings small batch.</span></li>
+              <li class="account__list-item"><span class="account__number">3</span><span class="account__text">Kombucha kale chips tilde, gluten-free disrupt crucifix ramps poke forage sartorial edison bulb vaporware.</span></li>
             </ul>
-            <!--/.navbar__list-->
-            <div class="navbar__buttons"><button class="navbar__btn navbar__btn--login">Login</button><button class="navbar__btn navbar__btn--signup">Signup</button></div>
-          </nav>
-          <!--/.navbar-->
+          </div>
+        </section>
+        <!--/.account-->
+        <section class="signup" id="signup">
+          <h2 class="signup__title">Sign Up and Get Started</h2><a class="signup__btn btn--blue btn--signup" href="#">Get Started</a>
+        </section>
+        <!--/.signup-->
+        <footer class="page-footer">
+          <div class="page-footer__top">
+            <ul class="page-footer__list">
+              <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">Help and Contact</a></li>
+              <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">Fees</a></li>
+              <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">Security</a></li>
+              <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">Features</a></li>
+              <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">Shop</a></li>
+            </ul>
+            <ul class="page-footer__list">
+              <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">English</a></li>
+              <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">Spanish</a></li>
+              <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">French</a></li>
+              <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">Italian</a></li>
+              <li class="page-footer__list-item"><a class="page-footer__list-link" href="#"><img class="page-footer__img" alt="Flag" width="100" src="img/flag.png"></a></li>
+            </ul>
+          </div>
+          <!--/.page-footer__top-->
+          <div class="page-footer__bottom">
+            <p class="page-footer__copyright">Copyright &copy; All Rights Reserved</p>
+          </div>
+        </footer>
+        <!--/.page-footer-->
+      </div>
+      <div class="login">
+        <div class="login__content">
+          <div class="logo"><span class="logo__p1">P</span><span class="logo__p2">P</span><span>Pay</span><span>Pal</span></div>
+          <form class="login__form"><input class="login__input" type="text" placeholder="Email or mobile number" name="login"><input class="login__input" type="password" name="password"><input class="login__login-btn" type="button" value="Log In"><a class="login__link" href="#">Having trouble logging in?</a><span>or</span><input class="login__signup-btn btn--signup" type="button" value="Sign Up"></form>
         </div>
-        <div class="top-content__banner">
-          <h1 class="top-content__heading">We've Got You Covered</h1>
-          <p class="top-content__paragraph">Cliche health goth cardigan, kitsch venmo ramps hell of church-key deep v kickstarter dreamcatcher. DIY asymmetrical seitan synth pug polaroid man braid stumptown flannel four dollar toast +1 subway tile tote bag. Microdosing helvetica taiyaki hoodie.</p><a class="top-content__banner-btn btn--blue" href="#">Learn More</a>
-        </div>
-        <!--/.top-content__banner-->
-      </section>
-      <!--/.top-content-->
-      <section class="services" id="services">
-        <h2 class="services__heading">PayPal is for everyone who pays or gets paid</h2>
-        <div class="services__grid">
-          <div class="services__col"><i class="fas fa-user-tie"></i>
-            <h3 class="services__name">Individuals</h3>
-            <p class="services__paragraph">I'm baby irony pok pitchfork four dollar toast butcher la croix synth hella artisan gluten-free tbh.</p><a class="services__btn" href="#">Learn More</a>
+      </div>
+      <!--/.login-->
+      <div class="signup-page">
+        <div class="signup-page__wrapper">
+          <div class="signup-page__top">
+            <div class="logo"><span class="logo__p1">P</span><span class="logo__p2">P</span>PayPal</div><button class="btn--login">Log In</button>
           </div>
-          <div class="services__col"><i class="fas fa-briefcase"></i>
-            <h3 class="services__name">Businesses</h3>
-            <p class="services__paragraph">I'm baby pok pok +1 hoodie man bun skateboard pug raclette lumbersexual cold-pressed tofu aesthetic.</p><a class="services__btn" href="#">Learn More</a>
-          </div>
-          <div class="services__col"><i class="fas fa-handshake"></i>
-            <h3 class="services__name">Partners</h3>
-            <p class="services__paragraph">I'm baby vegan cardigan pork belly, irony church-key readymade vexillologist retro gastropub wolf.</p><a class="services__btn" href="#">Learn More</a>
-          </div>
-        </div>
-      </section>
-      <!--/.services-->
-      <section class="features" id="features">
-        <h2 class="features__title">The world prefers PayPal</h2>
-        <div class="features__grid">
-          <div class="features__col">
-            <h3 class="features__heading">Advanced Protection</h3>
-            <p class="features__paragraph">Iceland semiotics pinterest direct trade, plaid next level waistcoat dreamcatcher small batch taxidermy keytar church-key. Aesthetic 90's cronut woke heirloom, artisan organic vinyl umami flannel. Godard celiac PBR&B, taxidermy fashion axe hexagon hot chicken enamel pin.</p>
-          </div>
-          <div class="features__col">
-            <h3 class="features__heading">Fast Payments</h3>
-            <p class="features__paragraph">Chambray roof party chillwave four loko franzen distillery. Cred direct trade cray, gastropub coloring book 3 wolf moon messenger bag cold-pressed lumbersexual hashtag. Meditation gluten-free VHS, affogato etsy knausgaard 3 wolf moon fam tote bag thundercats meh leggings.</p>
-          </div>
-          <div class="features__col">
-            <h3 class="features__heading">Global Reach</h3>
-            <p class="features__paragraph">Cornhole kinfolk af live-edge twee, messenger bag adaptogen. Quinoa twee four dollar toast, live-edge adaptogen snackwave kickstarter letterpress taxidermy ramps cold-pressed raw denim trust fund kale chips. Literally butcher single-origin coffee forage fam.</p>
-          </div>
-          <div class="features__col">
-            <h3 class="features__heading">Easy Integration</h3>
-            <p class="features__paragraph">Chicharrones brunch enamel pin, mixtape vexillologist waistcoat aesthetic crucifix kombucha twee cold-pressed cronut mumblecore iPhone cred. Gastropub 8-bit microdosing four dollar toast keffiyeh, stumptown shabby chic umami drinking vinegar activated charcoal hell of</p>
-          </div>
-          <div class="features__col">
-            <h3 class="features__heading">Simple and Convenient</h3>
-            <p class="features__paragraph">Venmo fam tacos irony. Gluten-free intelligentsia authentic, VHS normcore taxidermy squid wayfarers direct trade gastropub bushwick. Subway tile austin truffaut, glossier normcore forage freegan four loko neutra affogato prism small batch vegan.</p>
-          </div>
-          <div class="features__col">
-            <h3 class="features__heading">24/7 Service</h3>
-            <p class="features__paragraph">Whatever aesthetic pinterest snackwave mlkshk 8-bit. You probably haven't heard of them four loko humblebrag, green juice pok pok taxidermy locavore tilde raw denim tote bag truffaut fingerstache celiac franzen. Shoreditch ramps drinking vinegar trust fund.</p>
+          <div class="signup-page__content">
+            <div class="signup-page__left">
+              <div class="signup-page__images"><img class="signup-page__img" width="200" alt="Person" src="img/person-1.jpg"><img class="signup-page__img" width="200" alt="Person" src="img/person-2.jpg"><img class="signup-page__img" width="200" alt="Person" src="img/person-3.jpg"></div>
+              <h2 class="signup-page__title">See for yourself why millions of people love PayPal.</h2>
+            </div>
+            <!--/.signup-page__left-->
+            <div class="signup-page__right">
+              <h3>Sign up for PayPal, it's free</h3>
+              <h4>Choose from two types of accounts:</h4>
+              <div class="signup-page__form">
+                <div class="signup-page__input-group"><input class="signup-page__radio" name="checkbox" type="radio" id="personal" checked><label class="signup-page__input-option" for="personal">
+                    <h3>Personal Account</h3>
+                    <p>Edison bulb asymmetrical DIY, fashion axe pour-over flannel next level typewriter microdosing fingerstache af quinoa flexitarian tbh. Hell of humblebrag chia, kale chips waistcoat cray fixie shoreditch tumblr farm-to-table venmo 90's trust fund activated charcoal.</p>
+                  </label></div>
+                <div class="signup-page__input-group"><input class="signup-page__radio" name="checkbox" type="radio" id="business"><label class="signup-page__input-option" for="business">
+                    <h3>Business Account</h3>
+                    <p>Truffaut typewriter flexitarian, hexagon subway tile activated charcoal iPhone put a bird on it dreamcatcher brooklyn umami craft beer four loko health goth. Craft beer heirloom palo santo cardigan, plaid shaman single-origin coffee tbh roof party disrupt wolf authentic franzen.</p>
+                  </label></div><button class="signup-page__form-btn btn--login">Continue</button>
+              </div>
+              <!--/.signup-page__form-->
+            </div>
+            <!--/.signup-page__right-->
           </div>
         </div>
-      </section>
-      <!--/.features-->
-      <section class="account" id="account">
-        <h2 class="account__title">Get started with PayPal.</h2>
-        <div class="account__grid">
-          <picture class="picture account__img-wrapper">
-            <source media="(min-width: 0)" type="image/webp" srcset="img/account-01-640p.webp, img/account-01-1280p.webp 2x" /><img class="account__img" alt="Mackbook" width="640" src="img/account-01-640p.png" srcset="img/account-01-1280p.png 2x" />
-          </picture>
-          <ul class="account__list">
-            <li class="account__list-item"><span class="account__number">1</span><span>Set up<a class="account__link" href="#"> a business account</a></span></li>
-            <li class="account__list-item"><span class="account__number">2</span><span class="account__text">Selvage affogato ramps leggings small batch.</span></li>
-            <li class="account__list-item"><span class="account__number">3</span><span class="account__text">Kombucha kale chips tilde, gluten-free disrupt crucifix ramps poke forage sartorial edison bulb vaporware.</span></li>
-          </ul>
-        </div>
-      </section>
-      <!--/.account-->
-      <section class="signup" id="signup">
-        <h2 class="signup__title">Sign Up and Get Started</h2><a class="signup__btn btn--blue" href="#">Get Started</a>
-      </section>
-      <!--/.signup-->
-      <footer class="page-footer">
-        <div class="page-footer__top">
-          <ul class="page-footer__list">
-            <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">Help and Contact</a></li>
-            <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">Fees</a></li>
-            <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">Security</a></li>
-            <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">Features</a></li>
-            <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">Shop</a></li>
-          </ul>
-          <ul class="page-footer__list">
-            <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">English</a></li>
-            <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">Spanish</a></li>
-            <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">French</a></li>
-            <li class="page-footer__list-item"><a class="page-footer__list-link" href="#">Italian</a></li>
-            <li class="page-footer__list-item"><a class="page-footer__list-link" href="#"><img class="page-footer__img" alt="Flag" width="100" src="img/flag.png"></a></li>
-          </ul>
-        </div>
-        <!--/.page-footer__top-->
-        <div class="page-footer__bottom">
-          <p class="page-footer__copyright">Copyright &copy; All Rights Reserved</p>
-        </div>
-      </footer>
-      <!--/.page-footer-->
+      </div>
+      <!--/.signup-page-->
     </div>
   </div><script defer src="js/bundle.js">
   </script>

@@ -148,7 +148,7 @@ eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется ав
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// const ready = require('./utils/documentReady.js');\n// ready(function(){\n//   console.log('DOM героически построен!');\n// });\n// const $ = require('jquery');\n// $( document ).ready(function() {});\n\n//# sourceURL=webpack:///./src/js/script.js?");
+eval("document.querySelectorAll('.logo').forEach(function (logo) {\n  logo.addEventListener('click', function () {\n    document.querySelector('.page__front-page').style.display = 'block';\n    document.querySelector('.login').style.display = 'none';\n    document.querySelector('.signup-page').style.display = 'none';\n  });\n});\ndocument.querySelectorAll('.btn--login').forEach(function (btnLogin) {\n  btnLogin.addEventListener('click', function () {\n    document.querySelector('.page__front-page').style.display = 'none';\n    document.querySelector('.login').style.display = 'flex';\n    document.querySelector('.signup-page').style.display = 'none';\n  });\n});\ndocument.querySelectorAll('.btn--signup').forEach(function (btnSignup) {\n  btnSignup.addEventListener('click', function () {\n    document.querySelector('.page__front-page').style.display = 'none';\n    document.querySelector('.login').style.display = 'none';\n    document.querySelector('.signup-page').style.display = 'block';\n  });\n});\n\n//# sourceURL=webpack:///./src/js/script.js?");
 
 /***/ }),
 
