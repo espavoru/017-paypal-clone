@@ -204,4 +204,43 @@ block content
         input.login__signup-btn(type='button', value='Sign Up')
   ///.login
 
+  .signup-page
+    .signup-page__wrapper
+      .signup-page__top
+        .logo
+          span.logo__p1 P
+          span.logo__p2 P
+          | PayPal
+
+        button Log In
+
+      .signup-page__content
+        .signup-page__left
+          .signup-page__images
+            img.signup-page__img(width='200', alt='Person', src='img/person-1.jpg')
+            img.signup-page__img(width='200', alt='Person', src='img/person-2.jpg')
+            img.signup-page__img(width='200', alt='Person', src='img/person-3.jpg')
+          h2.signup-page__title See for yourself why millions of people love PayPal.
+        ///.signup-page__left
+
+        .signup-page__right
+          h3 Sign up for PayPal, it's free
+          h4 Choose from two types of accounts:
+
+          .signup-page__form
+            .signup-page__input-group
+              input.signup-page__radio(name='checkbox', type='radio', id='personal', checked)
+              label.signup-page__input-option(for='personal')
+                h3 Personal Account
+                p Edison bulb asymmetrical DIY, fashion axe pour-over flannel next level typewriter microdosing fingerstache af quinoa flexitarian tbh. Hell of humblebrag chia, kale chips waistcoat cray fixie shoreditch tumblr farm-to-table venmo 90's trust fund activated charcoal.
+            .signup-page__input-group
+              input.signup-page__radio(name='checkbox', type='radio', id='business')
+              label.signup-page__input-option(for='business')
+                h3 Business Account
+                p Truffaut typewriter flexitarian, hexagon subway tile activated charcoal iPhone put a bird on it dreamcatcher brooklyn umami craft beer four loko health goth. Craft beer heirloom palo santo cardigan, plaid shaman single-origin coffee tbh roof party disrupt wolf authentic franzen.
+            button.signup-page__form-btn Continue
+          ///.signup-page__form
+        ///.signup-page__right
+  ///.signup-page
+
 block footer
