@@ -48,10 +48,6 @@
   &__footer-wrapper {
     flex-shrink: 0;
   }
-
-  &__front-page {
-    display: none;
-  }
 }
 
 *,
@@ -162,11 +158,6 @@ a {
   color: $link-color;
   background-color: transparent;
   transition: color 0.3s;
-
-  &:hover,
-  &:focus {
-    color: $link-color--hover;
-  }
 
   // &:visited {
   //   color: $link-color--hover;

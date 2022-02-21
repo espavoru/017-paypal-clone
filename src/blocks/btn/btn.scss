@@ -32,19 +32,14 @@
   &:hover,
   &:focus {
     text-decoration: none;
-    color: $text-color;
+    // color: $text-color;
     background-color: darken($gray-lightest, 10%);
-    // border-color: darken($gray-lighter, 12%);
+    border-color: darken($gray-lighter, 12%);
   }
 
   // &:visited {
   //   color: $text-color;
   // }
-
-  &:active,
-  &:focus {
-    @include field-focus;
-  }
 
   &--disabled,
   &:disabled {

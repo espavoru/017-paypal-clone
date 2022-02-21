@@ -13,7 +13,7 @@ block content
     section.top-content#top-content
       .navbar__wrapper
         nav.navbar
-          .navbar__logo
+          .logo
             span.navbar__logo-p1 P
             span.navbar__logo-p2 P
             | PayPal
@@ -56,14 +56,14 @@ block content
           ///.navbar__list
 
           .navbar__buttons
-            button.navbar__btn.navbar__btn--login Login
-            button.navbar__btn.navbar__btn--signup Signup
+            button.navbar__btn.navbar__btn--login.btn--login Login
+            button.navbar__btn.navbar__btn--signup.btn--signup Signup
         ///.navbar
 
       .top-content__banner
         h1.top-content__heading We've Got You Covered
         p.top-content__paragraph Cliche health goth cardigan, kitsch venmo ramps hell of church-key deep v kickstarter dreamcatcher. DIY asymmetrical seitan synth pug polaroid man braid stumptown flannel four dollar toast +1 subway tile tote bag. Microdosing helvetica taiyaki hoodie.
-        a.top-content__banner-btn.btn--blue(href='#') Learn More
+        a.top-content__banner-btn.btn--blue.btn--login(href='#') Learn More
       ///.top-content__banner
     ///.top-content
 
@@ -150,7 +150,7 @@ block content
 
     section.signup#signup
       h2.signup__title Sign Up and Get Started
-      a.signup__btn.btn--blue(href='#') Get Started
+      a.signup__btn.btn--blue.btn--signup(href='#') Get Started
     ///.signup
 
     footer.page-footer
@@ -201,7 +201,7 @@ block content
         input.login__login-btn(type='button', value='Log In')
         a.login__link(href='#') Having trouble logging in?
         span or
-        input.login__signup-btn(type='button', value='Sign Up')
+        input.login__signup-btn.btn--signup(type='button', value='Sign Up')
   ///.login
 
   .signup-page
@@ -212,7 +212,7 @@ block content
           span.logo__p2 P
           | PayPal
 
-        button Log In
+        button.btn--login Log In
 
       .signup-page__content
         .signup-page__left
@@ -238,7 +238,7 @@ block content
               label.signup-page__input-option(for='business')
                 h3 Business Account
                 p Truffaut typewriter flexitarian, hexagon subway tile activated charcoal iPhone put a bird on it dreamcatcher brooklyn umami craft beer four loko health goth. Craft beer heirloom palo santo cardigan, plaid shaman single-origin coffee tbh roof party disrupt wolf authentic franzen.
-            button.signup-page__form-btn Continue
+            button.signup-page__form-btn.btn--login Continue
           ///.signup-page__form
         ///.signup-page__right
   ///.signup-page
