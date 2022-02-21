@@ -6,182 +6,202 @@ append config
     currentDescription = 'New website'
     currentUrl = 'index.html'
 
+block header
+
 block content
+  .page__front-page
+    section.top-content#top-content
+      .navbar__wrapper
+        nav.navbar
+          .navbar__logo
+            span.navbar__logo-p1 P
+            span.navbar__logo-p2 P
+            | PayPal
 
-  section.top-content#top-content
-    .navbar__wrapper
-      nav.navbar
-        .navbar__logo
-          span.navbar__logo-p1 P
-          span.navbar__logo-p2 P
-          | PayPal
+          ul.navbar__list
+            li.navbar__list-item.navbar__list-item--hover
+              a.navbar__list-link(href='#personal') Personal
+                i.fas.fa-chevron-down
+              ul.navbar__dropdown
+                li.navbar__dropdown-item
+                  a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') How PayPal works
+                  a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') What can you do with a personal account
+                li.navbar__dropdown-item
+                  a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') Pay online
+                  a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') Online payment without borders
+                li.navbar__dropdown-item
+                  a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') Send payments
+                  a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') Send payments abroad
+                li.navbar__dropdown-item
+                  a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') Search for deals
+                  a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') Pay with PayPal and send money
+            li.navbar__list-item.navbar__list-item--hover
+              a.navbar__list-link(href='#business') Business
+                i.fas.fa-chevron-down
+              ul.navbar__dropdown
+                li.navbar__dropdown-item
+                  a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') All business solutions
+                  a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') See our range of products
+                li.navbar__dropdown-item
+                  a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') Accept online payments
+                  a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') Get paid on your website
+                li.navbar__dropdown-item
+                  a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') Send invoices
+                  a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') Create and email online invoices
+                li.navbar__dropdown-item
+                  a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') Sell internationally
+                  a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') PayPal supports your global growth
+            li.navbar__list-item
+              a.navbar__list-link(href='#personal') Partners and Developers
+          ///.navbar__list
 
-        ul.navbar__list
-          li.navbar__list-item.navbar__list-item--hover
-            a.navbar__list-link(href='#personal') Personal
-              i.fas.fa-chevron-down
-            ul.navbar__dropdown
-              li.navbar__dropdown-item
-                a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') How PayPal works
-                a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') What can you do with a personal account
-              li.navbar__dropdown-item
-                a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') Pay online
-                a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') Online payment without borders
-              li.navbar__dropdown-item
-                a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') Send payments
-                a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') Send payments abroad
-              li.navbar__dropdown-item
-                a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') Search for deals
-                a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') Pay with PayPal and send money
-          li.navbar__list-item.navbar__list-item--hover
-            a.navbar__list-link(href='#business') Business
-              i.fas.fa-chevron-down
-            ul.navbar__dropdown
-              li.navbar__dropdown-item
-                a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') All business solutions
-                a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') See our range of products
-              li.navbar__dropdown-item
-                a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') Accept online payments
-                a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') Get paid on your website
-              li.navbar__dropdown-item
-                a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') Send invoices
-                a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') Create and email online invoices
-              li.navbar__dropdown-item
-                a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') Sell internationally
-                a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') PayPal supports your global growth
-          li.navbar__list-item
-            a.navbar__list-link(href='#personal') Partners and Developers
-        ///.navbar__list
+          .navbar__buttons
+            button.navbar__btn.navbar__btn--login Login
+            button.navbar__btn.navbar__btn--signup Signup
+        ///.navbar
 
-        .navbar__buttons
-          button.navbar__btn.navbar__btn--login Login
-          button.navbar__btn.navbar__btn--signup Signup
-      ///.navbar
+      .top-content__banner
+        h1.top-content__heading We've Got You Covered
+        p.top-content__paragraph Cliche health goth cardigan, kitsch venmo ramps hell of church-key deep v kickstarter dreamcatcher. DIY asymmetrical seitan synth pug polaroid man braid stumptown flannel four dollar toast +1 subway tile tote bag. Microdosing helvetica taiyaki hoodie.
+        a.top-content__banner-btn.btn--blue(href='#') Learn More
+      ///.top-content__banner
+    ///.top-content
 
-    .top-content__banner
-      h1.top-content__heading We've Got You Covered
-      p.top-content__paragraph Cliche health goth cardigan, kitsch venmo ramps hell of church-key deep v kickstarter dreamcatcher. DIY asymmetrical seitan synth pug polaroid man braid stumptown flannel four dollar toast +1 subway tile tote bag. Microdosing helvetica taiyaki hoodie.
-      a.top-content__banner-btn.btn--blue(href='#') Learn More
-    ///.top-content__banner
-  ///.top-content
+    section.services#services
+      h2.services__heading PayPal is for everyone who pays or gets paid
 
-  section.services#services
-    h2.services__heading PayPal is for everyone who pays or gets paid
+      .services__grid
 
-    .services__grid
+        .services__col
+          i.fas.fa-user-tie
+          h3.services__name Individuals
+          p.services__paragraph I'm baby irony pok pitchfork four dollar toast butcher la croix synth hella artisan gluten-free tbh.
+          a.services__btn(href='#') Learn More
 
-      .services__col
-        i.fas.fa-user-tie
-        h3.services__name Individuals
-        p.services__paragraph I'm baby irony pok pitchfork four dollar toast butcher la croix synth hella artisan gluten-free tbh.
-        a.services__btn(href='#') Learn More
+        .services__col
+          i.fas.fa-briefcase
+          h3.services__name Businesses
+          p.services__paragraph I'm baby pok pok +1 hoodie man bun skateboard pug raclette lumbersexual cold-pressed tofu aesthetic.
+          a.services__btn(href='#') Learn More
 
-      .services__col
-        i.fas.fa-briefcase
-        h3.services__name Businesses
-        p.services__paragraph I'm baby pok pok +1 hoodie man bun skateboard pug raclette lumbersexual cold-pressed tofu aesthetic.
-        a.services__btn(href='#') Learn More
+        .services__col
+          i.fas.fa-handshake
+          h3.services__name Partners
+          p.services__paragraph I'm baby vegan cardigan pork belly, irony church-key readymade vexillologist retro gastropub wolf.
+          a.services__btn(href='#') Learn More
+    ///.services
 
-      .services__col
-        i.fas.fa-handshake
-        h3.services__name Partners
-        p.services__paragraph I'm baby vegan cardigan pork belly, irony church-key readymade vexillologist retro gastropub wolf.
-        a.services__btn(href='#') Learn More
-  ///.services
+    section.features#features
+      h2.features__title The world prefers PayPal
 
-  section.features#features
-    h2.features__title The world prefers PayPal
+      .features__grid
 
-    .features__grid
+        .features__col
+          h3.features__heading Advanced Protection
+          p.features__paragraph Iceland semiotics pinterest direct trade, plaid next level waistcoat dreamcatcher small batch taxidermy keytar church-key. Aesthetic 90's cronut woke heirloom, artisan organic vinyl umami flannel. Godard celiac PBR&B, taxidermy fashion axe hexagon hot chicken enamel pin.
 
-      .features__col
-        h3.features__heading Advanced Protection
-        p.features__paragraph Iceland semiotics pinterest direct trade, plaid next level waistcoat dreamcatcher small batch taxidermy keytar church-key. Aesthetic 90's cronut woke heirloom, artisan organic vinyl umami flannel. Godard celiac PBR&B, taxidermy fashion axe hexagon hot chicken enamel pin.
+        .features__col
+          h3.features__heading Fast Payments
+          p.features__paragraph Chambray roof party chillwave four loko franzen distillery. Cred direct trade cray, gastropub coloring book 3 wolf moon messenger bag cold-pressed lumbersexual hashtag. Meditation gluten-free VHS, affogato etsy knausgaard 3 wolf moon fam tote bag thundercats meh leggings.
 
-      .features__col
-        h3.features__heading Fast Payments
-        p.features__paragraph Chambray roof party chillwave four loko franzen distillery. Cred direct trade cray, gastropub coloring book 3 wolf moon messenger bag cold-pressed lumbersexual hashtag. Meditation gluten-free VHS, affogato etsy knausgaard 3 wolf moon fam tote bag thundercats meh leggings.
+        .features__col
+          h3.features__heading Global Reach
+          p.features__paragraph Cornhole kinfolk af live-edge twee, messenger bag adaptogen. Quinoa twee four dollar toast, live-edge adaptogen snackwave kickstarter letterpress taxidermy ramps cold-pressed raw denim trust fund kale chips. Literally butcher single-origin coffee forage fam.
 
-      .features__col
-        h3.features__heading Global Reach
-        p.features__paragraph Cornhole kinfolk af live-edge twee, messenger bag adaptogen. Quinoa twee four dollar toast, live-edge adaptogen snackwave kickstarter letterpress taxidermy ramps cold-pressed raw denim trust fund kale chips. Literally butcher single-origin coffee forage fam.
+        .features__col
+          h3.features__heading Easy Integration
+          p.features__paragraph Chicharrones brunch enamel pin, mixtape vexillologist waistcoat aesthetic crucifix kombucha twee cold-pressed cronut mumblecore iPhone cred. Gastropub 8-bit microdosing four dollar toast keffiyeh, stumptown shabby chic umami drinking vinegar activated charcoal hell of
 
-      .features__col
-        h3.features__heading Easy Integration
-        p.features__paragraph Chicharrones brunch enamel pin, mixtape vexillologist waistcoat aesthetic crucifix kombucha twee cold-pressed cronut mumblecore iPhone cred. Gastropub 8-bit microdosing four dollar toast keffiyeh, stumptown shabby chic umami drinking vinegar activated charcoal hell of
+        .features__col
+          h3.features__heading Simple and Convenient
+          p.features__paragraph Venmo fam tacos irony. Gluten-free intelligentsia authentic, VHS normcore taxidermy squid wayfarers direct trade gastropub bushwick. Subway tile austin truffaut, glossier normcore forage freegan four loko neutra affogato prism small batch vegan.
 
-      .features__col
-        h3.features__heading Simple and Convenient
-        p.features__paragraph Venmo fam tacos irony. Gluten-free intelligentsia authentic, VHS normcore taxidermy squid wayfarers direct trade gastropub bushwick. Subway tile austin truffaut, glossier normcore forage freegan four loko neutra affogato prism small batch vegan.
+        .features__col
+          h3.features__heading 24/7 Service
+          p.features__paragraph Whatever aesthetic pinterest snackwave mlkshk 8-bit. You probably haven't heard of them four loko humblebrag, green juice pok pok taxidermy locavore tilde raw denim tote bag truffaut fingerstache celiac franzen. Shoreditch ramps drinking vinegar trust fund.
+    ///.features
 
-      .features__col
-        h3.features__heading 24/7 Service
-        p.features__paragraph Whatever aesthetic pinterest snackwave mlkshk 8-bit. You probably haven't heard of them four loko humblebrag, green juice pok pok taxidermy locavore tilde raw denim tote bag truffaut fingerstache celiac franzen. Shoreditch ramps drinking vinegar trust fund.
-  ///.features
+    section.account#account
+      h2.account__title Get started with PayPal.
 
-  section.account#account
-    h2.account__title Get started with PayPal.
+      .account__grid
+        +picture({
+          'img': 'account-01',
+          'alt': 'Mackbook',
+          'lg': false,
+          'ext': 'png'
+        }, 'account__img').account__img-wrapper
 
-    .account__grid
-      +picture({
-        'img': 'account-01',
-        'alt': 'Mackbook',
-        'lg': false,
-        'ext': 'png'
-      }, 'account__img').account__img-wrapper
+        ul.account__list
+          li.account__list-item
+            span.account__number 1
+            span
+              | Set up
+              a.account__link(href='#')  a business account
 
-      ul.account__list
-        li.account__list-item
-          span.account__number 1
-          span
-            | Set up
-            a.account__link(href='#')  a business account
+          li.account__list-item
+            span.account__number 2
+            span.account__text Selvage affogato ramps leggings small batch.
 
-        li.account__list-item
-          span.account__number 2
-          span.account__text Selvage affogato ramps leggings small batch.
+          li.account__list-item
+            span.account__number 3
+            span.account__text Kombucha kale chips tilde, gluten-free disrupt crucifix ramps poke forage sartorial edison bulb vaporware.
+    ///.account
 
-        li.account__list-item
-          span.account__number 3
-          span.account__text Kombucha kale chips tilde, gluten-free disrupt crucifix ramps poke forage sartorial edison bulb vaporware.
-  ///.account
+    section.signup#signup
+      h2.signup__title Sign Up and Get Started
+      a.signup__btn.btn--blue(href='#') Get Started
+    ///.signup
 
-  section.signup#signup
-    h2.signup__title Sign Up and Get Started
-    a.signup__btn.btn--blue(href='#') Get Started
-  ///.signup
+    footer.page-footer
+      .page-footer__top
+
+        ul.page-footer__list
+          li.page-footer__list-item
+            a.page-footer__list-link(href='#') Help and Contact
+          li.page-footer__list-item
+            a.page-footer__list-link(href='#') Fees
+          li.page-footer__list-item
+            a.page-footer__list-link(href='#') Security
+          li.page-footer__list-item
+            a.page-footer__list-link(href='#') Features
+          li.page-footer__list-item
+            a.page-footer__list-link(href='#') Shop
+
+        ul.page-footer__list
+          li.page-footer__list-item
+            a.page-footer__list-link(href='#') English
+          li.page-footer__list-item
+            a.page-footer__list-link(href='#') Spanish
+          li.page-footer__list-item
+            a.page-footer__list-link(href='#') French
+          li.page-footer__list-item
+            a.page-footer__list-link(href='#') Italian
+          li.page-footer__list-item
+            a.page-footer__list-link(href='#')
+              img.page-footer__img(alt='Flag', width='100', src='img/flag.png')
+
+      ///.page-footer__top
+
+      .page-footer__bottom
+        p.page-footer__copyright Copyright &copy; All Rights Reserved
+    ///.page-footer
+
+  .login
+    .login__content
+      .logo
+        span.logo__p1 P
+        span.logo__p2 P
+        span Pay
+        span Pal
+
+      form.login__form
+        input.login__input(type='text', placeholder='Email or mobile number', name='login')
+        input.login__input(type='password', name='password')
+        input.login__login-btn(type='button', value='Log In')
+        a.login__link(href='#') Having trouble logging in?
+        span or
+        input.login__signup-btn(type='button', value='Sign Up')
+  ///.login
 
 block footer
-  footer.page-footer
-    .page-footer__top
-
-      ul.page-footer__list
-        li.page-footer__list-item
-          a.page-footer__list-link(href='#') Help and Contact
-        li.page-footer__list-item
-          a.page-footer__list-link(href='#') Fees
-        li.page-footer__list-item
-          a.page-footer__list-link(href='#') Security
-        li.page-footer__list-item
-          a.page-footer__list-link(href='#') Features
-        li.page-footer__list-item
-          a.page-footer__list-link(href='#') Shop
-
-      ul.page-footer__list
-        li.page-footer__list-item
-          a.page-footer__list-link(href='#') English
-        li.page-footer__list-item
-          a.page-footer__list-link(href='#') Spanish
-        li.page-footer__list-item
-          a.page-footer__list-link(href='#') French
-        li.page-footer__list-item
-          a.page-footer__list-link(href='#') Italian
-        li.page-footer__list-item
-          a.page-footer__list-link(href='#')
-            img.page-footer__img(alt='Flag', width='100', src='img/flag.png')
-
-    ///.page-footer__top
-
-    .page-footer__bottom
-      p.page-footer__copyright Copyright &copy; All Rights Reserved
-  ///.page-footer

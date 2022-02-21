@@ -48,6 +48,10 @@
   &__footer-wrapper {
     flex-shrink: 0;
   }
+
+  &__front-page {
+    display: none;
+  }
 }
 
 *,

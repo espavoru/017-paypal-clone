@@ -1,0 +1,123 @@
+// В этом файле должны быть стили для БЭМ-блока login, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.login {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @include wrapper-full;
+
+  display: flex;
+  align-items: flex-start;
+  height: 100vh;
+
+  .logo {
+    margin-bottom: 1.2rem;
+
+    &__p1 {
+      color: darken($color: $accent-color, $amount: 10%);
+    }
+
+    &__p2 {
+      color: lighten($accent-color, 25%);
+    }
+
+    span:nth-child(3) { // stylelint-disable-line
+      color: darken($color: $accent-color, $amount: 10%);
+    }
+
+    span:nth-child(4) { // stylelint-disable-line
+      color: lighten($accent-color, 25%);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 0.1rem solid #cfcfcf;
+    padding: 3rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__form input {
+    width: 37rem;
+    height: 4.5rem;
+    margin: 1rem;
+    border-radius: 0.5em;
+  }
+
+  &__input {
+    border: 0.1rem solid #777;
+    padding: 0 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  &__login-btn {
+    border: 0.1rem solid $accent-color;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+
+    background-color: $accent-color;
+    cursor: pointer;
+  }
+
+  &__link {
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: lighten($accent-color, 20%);
+  }
+
+  &__form span {
+    position: relative;
+    width: 2rem;
+    margin: 1rem 0;
+
+    font-size: 1.8rem;
+    color: #888;
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 3.5rem;
+      width: 16rem;
+      height: 0.1rem;
+
+      transform: translateY(-50%);
+      background-color: #ccc;
+    }
+
+    &::after {
+      right: unset;
+      left: 3.5rem;
+    }
+  }
+
+  &__signup-btn {
+    border: 0.1rem solid lighten($accent-color, 55%);
+
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    background-color: lighten($accent-color, 55%);
+  }
+}
