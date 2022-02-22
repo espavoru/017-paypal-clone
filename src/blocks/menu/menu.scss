@@ -17,11 +17,21 @@
   font-size: 1.8rem;
   color: #fff;
 
-  transform: translateX(16rem);
+  transition: transform 0.6s cubic-bezier(1, 0, 0, 1);
   cursor: pointer;
 
   @media (min-width: 1000px) {
     display: none;
+  }
+
+  .change & {
+    position: fixed;
+    top: 2rem;
+    left: 6rem;
+
+    color: #444;
+    transform: translateX(16rem);
+    background-color: #eee;
   }
 
   &__icon {
@@ -34,6 +44,23 @@
   &__line {
     width: 2rem;
     height: 0.1rem;
+
+    transform-origin: left;
     background-color: #fff;
+
+    .change &--1 {
+      transform: rotate(45deg);
+      background-color: #444;
+    }
+
+    .change &--2 {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .change &--3 {
+      transform: rotate(-45deg);
+      background-color: #444;
+    }
   }
 }
