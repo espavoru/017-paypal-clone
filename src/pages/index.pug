@@ -13,6 +13,13 @@ block content
     section.top-content#top-content
       .navbar__wrapper
         nav.navbar
+          .menu
+            .menu__icon
+              .menu__line.menu__line--1
+              .menu__line.menu__line--2
+              .menu__line.menu__line--3
+            span Menu
+
           .logo
             span.navbar__logo-p1 P
             span.navbar__logo-p2 P
@@ -22,7 +29,11 @@ block content
             li.navbar__list-item.navbar__list-item--hover
               a.navbar__list-link(href='#personal') Personal
                 i.fas.fa-chevron-down
-              ul.navbar__dropdown
+              ul.navbar__dropdown.navbar__dropdown--personal
+                li.navbar__dropdown-item.navbar__dropdown-item--heading
+                  a(href='#')
+                    i.fas.fa-chevron-down
+                    | Personal
                 li.navbar__dropdown-item
                   a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') How PayPal works
                   a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') What can you do with a personal account
@@ -38,7 +49,11 @@ block content
             li.navbar__list-item.navbar__list-item--hover
               a.navbar__list-link(href='#business') Business
                 i.fas.fa-chevron-down
-              ul.navbar__dropdown
+              ul.navbar__dropdown.navbar__dropdown--business
+                li.navbar__dropdown-item.navbar__dropdown-item--heading
+                  a(href='#')
+                    i.fas.fa-chevron-down
+                    | Business
                 li.navbar__dropdown-item
                   a.navbar__dropdown-link.navbar__dropdown-link--1(href='#') All business solutions
                   a.navbar__dropdown-link.navbar__dropdown-link--2(href='#') See our range of products

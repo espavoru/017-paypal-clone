@@ -32,8 +32,12 @@
   -webkit-text-size-adjust: 100%; // stylelint-disable-line
   min-width: 320px;
   min-height: 100%;
-  font-size: 55%;
+  font-size: 50%;
   scroll-behavior: smooth;
+
+  @media (min-width: 1100px) {
+    font-size: 55%;
+  }
 
   @media (min-width: 1400px) {
     font-size: 62.5%;
@@ -103,6 +107,7 @@ select,
 textarea {
   touch-action: manipulation; // Стилевая коррекция 300ms задержки (для поддерживающих браузеров)
   margin: 0;                  // Убираем margin в Firefox и Safari
+  text-decoration: none;
 }
 
 button,
