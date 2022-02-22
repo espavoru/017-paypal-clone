@@ -16,23 +16,48 @@
   padding-bottom: 15rem;
 
   &__heading {
+    width: 80%;
     margin-bottom: 3rem;
 
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 300;
+    text-align: center;
+    line-height: 1.2;
     color: #333;
+
+    @media (min-width: 800px) {
+      width: auto;
+      text-align: left;
+      line-height: unset;
+    }
+
+    @media (min-width: 1000px) {
+      font-size: 5rem;
+    }
   }
 
   &__grid {
     @include row-flex;
+    flex-direction: column;
     justify-content: space-between;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
   }
 
   &__col {
     @include col;
-    @include size-lg(3.5);
+    @include size(8);
+    @include size-md(3.5);
 
+    margin: auto;
+    margin-bottom: 5rem;
     text-align: center;
+
+    @media (min-width: 768px) {
+      margin: 0 1rem;
+    }
 
     i {
       margin: 2rem 0;

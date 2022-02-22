@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 11rem;
+  width: 5rem;
   height: 4rem;
   border: 0.1rem solid #fff;
   border-radius: 3rem;
@@ -19,6 +19,10 @@
 
   transition: transform 0.6s cubic-bezier(1, 0, 0, 1);
   cursor: pointer;
+
+  @media (min-width: 400px) {
+    width: 11rem;
+  }
 
   @media (min-width: 1000px) {
     display: none;
@@ -32,6 +36,14 @@
     color: #444;
     transform: translateX(16rem);
     background-color: #eee;
+  }
+
+  span {
+    display: none;
+
+    @media (min-width: 400px) {
+      display: block;
+    }
   }
 
   &__icon {

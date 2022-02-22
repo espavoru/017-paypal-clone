@@ -97,9 +97,13 @@
     margin: 0;
     margin-bottom: 3rem;
 
-    font-size: 6rem;
+    font-size: 4.5rem;
     font-weight: 300;
     color: #fff;
+
+    @media (min-width: 550px) {
+      font-size: 6rem;
+    }
   }
 
   &__paragraph {
@@ -108,7 +112,12 @@
     margin-bottom: 4rem;
 
     font-size: 1.8rem;
+    line-height: 1.2;
     color: #fff;
+
+    @media (min-width: 550px) {
+      line-height: unset;
+    }
 
     @media (min-width: 1400px) {
       width: 50%;

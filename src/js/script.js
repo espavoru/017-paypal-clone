@@ -21,3 +21,7 @@ document.querySelectorAll('.btn--signup').forEach(btnSignup => {
     document.querySelector('.signup-page').style.display = 'block'
   })
 })
+
+window.addEventListener('resize', () => {
+  window.location.reload()
+})

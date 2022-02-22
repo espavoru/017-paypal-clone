@@ -13,6 +13,8 @@
   height: 100vh;
 
   .logo {
+    position: static;
+    transform: translate(0);
     margin-bottom: 1.2rem;
 
     &__p1 {
@@ -38,11 +40,15 @@
     flex-grow: 0;
     align-items: center;
     justify-content: center;
-    margin-top: 12%;
+    margin-top: 30%;
     margin-right: auto;
     margin-left: auto;
     border: 0.1rem solid #cfcfcf;
     padding: 3rem;
+
+    @media (min-width: 800px) {
+      margin-top: 12%;
+    }
   }
 
   &__form {

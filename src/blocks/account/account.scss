@@ -18,19 +18,30 @@
     margin-top: 0;
     margin-bottom: 5rem;
 
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 400;
     color: #444;
+
+    @media (min-width: 550px) {
+      font-size: 5rem;
+    }
   }
 
   &__grid {
     @include row-flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+
+    @media (min-width: 1000px) {
+      flex-direction: row;
+    }
   }
 
   &__img-wrapper {
     @include col;
-    @include size-xl(5);
+    @include size-xs(8);
+    @include size-md(5);
   }
 
   &__img {
@@ -40,12 +51,24 @@
 
   &__list {
     @include col;
-    @include size-xl(5);
+    @include size-md(8);
+    @include size-lg(5);
 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     margin-top: 2rem;
     margin-bottom: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: 550px) {
+      align-items: center;
+    }
+
+    @media (min-width: 1000px) {
+      align-items: flex-start;
+    }
   }
 
   &__list-item {
@@ -54,7 +77,16 @@
     margin-bottom: 2rem;
 
     font-size: 1.6rem;
+    text-align: left;
     font-weight: 600;
+
+    @media (min-width: 550px) {
+      text-align: center;
+    }
+
+    @media (min-width: 1000px) {
+      text-align: left;
+    }
   }
 
   &__number {

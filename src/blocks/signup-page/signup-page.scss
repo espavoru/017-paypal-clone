@@ -80,10 +80,15 @@
   }
 
   &__img {
-    width: 25%;
+    width: 28%;
     max-width: 18rem;
-    border: 1.5rem solid #ccc;
+    border: 1rem solid #ccc;
     border-radius: 50%;
+
+    @media (min-width: 800px) {
+      width: 25%;
+      border: 1.5rem solid #ccc;
+    }
   }
 
   &__title {
@@ -98,7 +103,12 @@
     @include size-sm(8);
     @include size-xl(4);
 
+    text-align: center;
     color: #555;
+
+    @media (min-width: 800px) {
+      text-align: left;
+    }
 
     @media (min-width: 1200px) {
       padding: 3rem;
@@ -117,6 +127,12 @@
   }
 
   &__form {
+    padding-top: 3rem;
+    text-align: left;
+
+    @media (min-width: 768px) {
+      padding-top: 0;
+    }
 
     h3 {
       margin: 0;
@@ -132,8 +148,13 @@
     [type='radio'] {
       width: 20%;
       height: 2rem;
-      margin-top: 0.5rem;
-      margin-left: -3rem;
+      margin-right: 1.5rem;
+
+      @media (min-width: 768px) {
+        margin-top: 0.5rem;
+        margin-right: 0;
+        margin-left: -3rem;
+      }
 
       @media (min-width: 1200px) {
         width: 30%;

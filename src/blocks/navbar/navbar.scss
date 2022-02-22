@@ -23,6 +23,14 @@
     width: 120rem;
   }
 
+  .logo {
+    display: none;
+
+    @media (min-width: 550px) {
+      display: block;
+    }
+  }
+
   &__wrapper {
     display: flex;
     justify-content: center;

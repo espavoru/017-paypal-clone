@@ -21,13 +21,21 @@
     margin: 0;
     margin-bottom: 5rem;
 
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 300;
+    text-align: center;
+
+    @media (min-width: 550px) {
+      font-size: 5rem;
+    }
   }
 
   &__grid {
     @include row-flex;
-    width: 90%;
+
+    @media (min-width: 1000px) {
+      width: 90%;
+    }
 
     @media (min-width: 1400px) {
       width: 80%;
@@ -40,13 +48,21 @@
 
   &__col {
     @include col;
-    @include size-lg(6);
-    @include size-xl(4);
+    @include size-sm(6);
+    @include size-md(4);
 
     margin-bottom: 5rem;
-    padding-right: 4rem;
-    padding-left: 4rem;
+    padding: 0 4rem;
     text-align: center;
+
+    @media (min-width: 768px) {
+      padding: 0 1.5rem;
+    }
+
+    @media (min-width: 1000px) {
+      padding-right: 4rem;
+      padding-left: 4rem;
+    }
   }
 
   &__heading {
