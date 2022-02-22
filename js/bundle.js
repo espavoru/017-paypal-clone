@@ -108,6 +108,17 @@ eval("var ready = __webpack_require__(/*! ../../js/utils/documentReady.js */ \".
 
 /***/ }),
 
+/***/ "./src/blocks/menu/menu.js":
+/*!*********************************!*\
+  !*** ./src/blocks/menu/menu.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("if (window.innerWidth < 1000) {\n  var menuIcon = document.querySelector('.menu');\n  var navbar = document.querySelector('.navbar');\n  menuIcon.addEventListener('click', function () {\n    navbar.classList.toggle('change');\n\n    if (!navbar.classList.contains('change')) {\n      document.querySelectorAll('.navbar__dropdown').forEach(function (dropdown) {\n        dropdown.style.left = '-20rem';\n      });\n    }\n  });\n  document.querySelectorAll('.navbar__list-item--hover .navbar__list-link').forEach(function (link) {\n    link.addEventListener('click', function () {\n      link.nextElementSibling.style.left = '0';\n    });\n  });\n  document.querySelectorAll('.navbar__dropdown-item--heading a').forEach(function (headingLink) {\n    headingLink.addEventListener('click', function () {\n      headingLink.parentElement.parentElement.style.left = '-20rem';\n    });\n  });\n}\n\n//# sourceURL=webpack:///./src/blocks/menu/menu.js?");
+
+/***/ }),
+
 /***/ "./src/blocks/modernizr/modernizr.js":
 /*!*******************************************!*\
   !*** ./src/blocks/modernizr/modernizr.js ***!
@@ -126,7 +137,7 @@ eval("function _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol ===
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var dropdownItems = document.querySelectorAll('.navbar__list-item--hover');\ndropdownItems.forEach(function (item) {\n  item.addEventListener('mouseover', function () {\n    item.lastElementChild.style.cssText = 'opacity: 1; visibility: visible;';\n    document.querySelector('.navbar__wrapper').style.background = 'linear-gradient(to right, #066399, #2f8fdf, #066399)';\n  });\n  item.addEventListener('mouseout', function () {\n    item.lastElementChild.style.cssText = 'opacity: 0; visibility: hidden;';\n    document.querySelector('.navbar__wrapper').style.background = 'none';\n  });\n});\n\n//# sourceURL=webpack:///./src/blocks/navbar/navbar.js?");
+eval("var dropdownItems = document.querySelectorAll('.navbar__list-item--hover');\n\nif (window.innerWidth >= 1000) {\n  dropdownItems.forEach(function (item) {\n    item.addEventListener('mouseover', function () {\n      item.lastElementChild.style.cssText = 'opacity: 1; visibility: visible;';\n      document.querySelector('.navbar__wrapper').style.background = 'linear-gradient(to right, #066399, #2f8fdf, #066399)';\n    });\n    item.addEventListener('mouseout', function () {\n      item.lastElementChild.style.cssText = 'opacity: 0; visibility: hidden;';\n      document.querySelector('.navbar__wrapper').style.background = 'none';\n    });\n  });\n}\n\n//# sourceURL=webpack:///./src/blocks/navbar/navbar.js?");
 
 /***/ }),
 
@@ -137,7 +148,7 @@ eval("var dropdownItems = document.querySelectorAll('.navbar__list-item--hover')
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ../blocks/navbar/navbar.js */ \"./src/blocks/navbar/navbar.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
+eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ../blocks/menu/menu.js */ \"./src/blocks/menu/menu.js\");\n\n__webpack_require__(/*! ../blocks/navbar/navbar.js */ \"./src/blocks/navbar/navbar.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
 
 /***/ }),
 
@@ -148,7 +159,7 @@ eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется ав
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("document.querySelectorAll('.logo').forEach(function (logo) {\n  logo.addEventListener('click', function () {\n    document.querySelector('.page__front-page').style.display = 'block';\n    document.querySelector('.login').style.display = 'none';\n    document.querySelector('.signup-page').style.display = 'none';\n  });\n});\ndocument.querySelectorAll('.btn--login').forEach(function (btnLogin) {\n  btnLogin.addEventListener('click', function () {\n    document.querySelector('.page__front-page').style.display = 'none';\n    document.querySelector('.login').style.display = 'flex';\n    document.querySelector('.signup-page').style.display = 'none';\n  });\n});\ndocument.querySelectorAll('.btn--signup').forEach(function (btnSignup) {\n  btnSignup.addEventListener('click', function () {\n    document.querySelector('.page__front-page').style.display = 'none';\n    document.querySelector('.login').style.display = 'none';\n    document.querySelector('.signup-page').style.display = 'block';\n  });\n});\n\n//# sourceURL=webpack:///./src/js/script.js?");
+eval("document.querySelectorAll('.logo').forEach(function (logo) {\n  logo.addEventListener('click', function () {\n    document.querySelector('.page__front-page').style.display = 'block';\n    document.querySelector('.login').style.display = 'none';\n    document.querySelector('.signup-page').style.display = 'none';\n  });\n});\ndocument.querySelectorAll('.btn--login').forEach(function (btnLogin) {\n  btnLogin.addEventListener('click', function () {\n    document.querySelector('.page__front-page').style.display = 'none';\n    document.querySelector('.login').style.display = 'flex';\n    document.querySelector('.signup-page').style.display = 'none';\n  });\n});\ndocument.querySelectorAll('.btn--signup').forEach(function (btnSignup) {\n  btnSignup.addEventListener('click', function () {\n    document.querySelector('.page__front-page').style.display = 'none';\n    document.querySelector('.login').style.display = 'none';\n    document.querySelector('.signup-page').style.display = 'block';\n  });\n});\nwindow.addEventListener('resize', function () {\n  window.location.reload();\n});\n\n//# sourceURL=webpack:///./src/js/script.js?");
 
 /***/ }),
 

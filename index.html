@@ -70,10 +70,18 @@ document.addEventListener("DOMContentLoaded", () => {
         <section class="top-content" id="top-content">
           <div class="navbar__wrapper">
             <nav class="navbar">
+              <div class="menu">
+                <div class="menu__icon">
+                  <div class="menu__line menu__line--1"></div>
+                  <div class="menu__line menu__line--2"></div>
+                  <div class="menu__line menu__line--3"></div>
+                </div><span>Menu</span>
+              </div>
               <div class="logo"><span class="navbar__logo-p1">P</span><span class="navbar__logo-p2">P</span>PayPal</div>
               <ul class="navbar__list">
                 <li class="navbar__list-item navbar__list-item--hover"><a class="navbar__list-link" href="#personal">Personal<i class="fas fa-chevron-down"></i></a>
-                  <ul class="navbar__dropdown">
+                  <ul class="navbar__dropdown navbar__dropdown--personal">
+                    <li class="navbar__dropdown-item navbar__dropdown-item--heading"><a href="#"><i class="fas fa-chevron-down"></i>Personal</a></li>
                     <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">How PayPal works</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">What can you do with a personal account</a></li>
                     <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Pay online</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Online payment without borders</a></li>
                     <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Send payments</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Send payments abroad</a></li>
@@ -81,7 +89,8 @@ document.addEventListener("DOMContentLoaded", () => {
                   </ul>
                 </li>
                 <li class="navbar__list-item navbar__list-item--hover"><a class="navbar__list-link" href="#business">Business<i class="fas fa-chevron-down"></i></a>
-                  <ul class="navbar__dropdown">
+                  <ul class="navbar__dropdown navbar__dropdown--business">
+                    <li class="navbar__dropdown-item navbar__dropdown-item--heading"><a href="#"><i class="fas fa-chevron-down"></i>Business</a></li>
                     <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">All business solutions</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">See our range of products</a></li>
                     <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Accept online payments</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Get paid on your website</a></li>
                     <li class="navbar__dropdown-item"><a class="navbar__dropdown-link navbar__dropdown-link--1" href="#">Send invoices</a><a class="navbar__dropdown-link navbar__dropdown-link--2" href="#">Create and email online invoices</a></li>
@@ -158,8 +167,8 @@ document.addEventListener("DOMContentLoaded", () => {
             </picture>
             <ul class="account__list">
               <li class="account__list-item"><span class="account__number">1</span><span>Set up<a class="account__link" href="#"> a business account</a></span></li>
-              <li class="account__list-item"><span class="account__number">2</span><span class="account__text">Selvage affogato ramps leggings small batch.</span></li>
-              <li class="account__list-item"><span class="account__number">3</span><span class="account__text">Kombucha kale chips tilde, gluten-free disrupt crucifix ramps poke forage sartorial edison bulb vaporware.</span></li>
+              <li class="account__list-item"><span class="account__number">2</span><span class="account__text">Kombucha kale chips tilde, gluten-free disrupt crucifix ramps poke.</span></li>
+              <li class="account__list-item"><span class="account__number">3</span><span class="account__text">Selvage affogato ramps leggings small batch.</span></li>
             </ul>
           </div>
         </section>
